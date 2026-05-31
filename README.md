@@ -205,14 +205,6 @@ This keeps Inkwell-style document edits syncable while pointer capture, hover pr
 
 `createCanvasToolActions` and `createCanvasToolsAiManifest` convert canvas tools into `frontier-tools` action manifests with reads, writes, required capabilities, expected patches, controls, icons, and event metadata. `canUseCanvasTool` and `dispatchCanvasToolWithPermissions` provide lightweight capability/policy gating.
 
-## Research Transfer
-
-- Inkwell-style tile tools map to grid-cell patches rather than mutable editor methods.
-- Bresenham line rasterization is used for brush, eraser, and line tools.
-- Flood fill uses an iterative scanline queue instead of recursion.
-- tldraw-style tool/state separation maps to explicit tool-machine records and lifecycle helpers.
-- Fabric/Konva-style transform handles map to reusable handle materialization and hit testing.
-
 ## Benchmarks
 
 These are Frontier-only package measurements, not competitor comparisons.
